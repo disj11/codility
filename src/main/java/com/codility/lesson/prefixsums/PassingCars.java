@@ -10,7 +10,7 @@ public class PassingCars {
         for (int i = 0; i < A.length; i++) {
             if (A[i] == 0) {
                 zeros++;
-            } else if (A[i] == 1) { //for every 1 - there will be an extra car pass for ALL the 0's that came before it
+            } else if (A[i] == 1) {
                 if (carPasses + zeros > MAX) {
                     return -1;
                 }
