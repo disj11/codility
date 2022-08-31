@@ -22,9 +22,4 @@ public class OddOccurrencesInArray {
 
         return -1;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new OddOccurrencesInArray().solution(new int[]{9, 3, 9, 3, 9, 7, 9})); // 7
-        System.out.println(new OddOccurrencesInArray().solution(new int[]{3, 3, 7, 7, 5, 8, 5})); // 8
-    }
 }

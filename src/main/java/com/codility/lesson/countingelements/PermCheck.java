@@ -13,9 +13,4 @@ public class PermCheck {
 
         return 1;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new PermCheck().solution(new int[]{4, 1, 3, 2})); // 1
-        System.out.println(new PermCheck().solution(new int[]{4, 1, 3})); // 0
-    }
 }

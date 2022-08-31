@@ -18,11 +18,4 @@ public class MissingInteger {
         }
         return min;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new MissingInteger().solution(new int[]{1, 3, 6, 4, 1, 2})); // 5
-        System.out.println(new MissingInteger().solution(new int[]{1, 2, 3})); // 4
-        System.out.println(new MissingInteger().solution(new int[]{-1, -2})); // 1
-        System.out.println(new MissingInteger().solution(new int[]{4, 5, 6, 2})); // 1
-    }
 }

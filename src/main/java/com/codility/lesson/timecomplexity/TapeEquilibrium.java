@@ -32,8 +32,4 @@ public class TapeEquilibrium {
 
         return min;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new TapeEquilibrium().solution(new int[]{3, 1, 2, 4, 3}));
-    }
 }

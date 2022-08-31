@@ -1,7 +1,5 @@
 package com.codility.lesson.countingelements;
 
-import java.util.Arrays;
-
 public class MaxCounters {
     public int[] solution(int N, int[] A) {
         int[] counters = new int[N];
@@ -22,9 +20,5 @@ public class MaxCounters {
         }
 
         return counters;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new MaxCounters().solution(5, new int[]{3, 4, 4, 6, 1, 4, 4}))); // {3, 2, 2, 4, 2};
     }
 }

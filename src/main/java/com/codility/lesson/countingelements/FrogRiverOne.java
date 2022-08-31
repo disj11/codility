@@ -22,9 +22,4 @@ public class FrogRiverOne {
 
         return -1;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new FrogRiverOne().solution(5, new int[]{1, 3, 1, 4, 2, 3, 5, 4})); // 6
-        System.out.println(new FrogRiverOne().solution(4, new int[]{1, 2, 1, 4, 2, 3, 5, 4})); // 5
-    }
 }
