@@ -11,9 +11,9 @@ class NumberOfArithmeticTripletsTest : FunSpec({
     context("주어진 테스트케이스가 통과한다.") {
         forAll(
             row(intArrayOf(0, 1, 4, 6, 7, 10), 3, 2),
-            row(intArrayOf(0, 1, 4, 6, 7, 10), 3, 2),
+            row(intArrayOf(4, 5, 6, 7, 8, 9), 2, 2),
         ) { nums, diff, expected ->
-            test("nums=${nums}, diff=${diff}, expected=${expected}") {
+            test("nums=${nums.toList()}, diff=${diff}, expected=${expected}") {
                 numberOfArithmeticTriplets.arithmeticTriplets(nums, diff) shouldBe expected
             }
         }
