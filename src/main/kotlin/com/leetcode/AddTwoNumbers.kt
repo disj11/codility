@@ -10,11 +10,11 @@ class AddTwoNumbers {
 
         val head = ListNode(0)
         var current = head
-        var curry = 0
+        var carry = 0
 
         while (l1Current != null || l2Current != null) {
-            val value = (l1Current?.`val` ?: 0) + (l2Current?.`val` ?: 0) + curry
-            curry = value / 10
+            val value = (l1Current?.`val` ?: 0) + (l2Current?.`val` ?: 0) + carry
+            carry = value / 10
 
             current.next = ListNode(value % 10)
             current = current.next!!
@@ -23,8 +23,8 @@ class AddTwoNumbers {
             l2Current = l2Current?.next
         }
 
-        if (curry > 0) {
-            current.next = ListNode(curry)
+        if (carry > 0) {
+            current.next = ListNode(carry)
         }
 
         return head.next
